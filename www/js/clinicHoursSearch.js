@@ -30,7 +30,7 @@ function getHospital() {
 			}
 		},
 		error: function(xhr, ajaxOptions, thrownError) {
-			console.log("error: " + xhr.status + "\n" + thrownError);
+			alert("error: " + xhr.status + "\n" + thrownError);
 		}
 	});
 }
