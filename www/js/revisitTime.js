@@ -1,6 +1,5 @@
 ﻿//var url = "http://localhost:8080/BBDPPatient/RevisitTimeServlet";
 var url = "http://140.121.197.130:8004/BBDPPatient/RevisitTimeServlet";		//最下面有BBDPDoctor的url
-
 var timePeriod = ["上午診", "下午診", "晚上診"];
 var HPTimePeriod = ["上午", "下午", "晚上"];
 var revisitTimeList;

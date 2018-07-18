@@ -32,7 +32,6 @@ function remindPush(doctorID, patientID, title, body, hyperlink, type) {
 	};
 	websocket.onerror = function() {};
 	websocket.onclose = function(event) {};
-	
 	$.ajax({
 		type: "POST",
 		url: "http://140.121.197.130:8004/BBDPDoctor/NotificationServlet",		//¨S¿ù!¬OBBDPDoctor

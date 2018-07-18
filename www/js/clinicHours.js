@@ -11,10 +11,6 @@ function getClinicHours() {
 	CHHospitalName = localStorage.getItem("CHHospitalName");
 	CHDepartmentName = localStorage.getItem("CHDepartmentName");
 	CHDoctorName = localStorage.getItem("CHDoctorName");
-	/*localStorage.removeItem("CHDoctorID");
-	localStorage.removeItem("CHHospitalName");
-	localStorage.removeItem("CHDepartmentName");
-	localStorage.removeItem("CHDoctorName");*/
 	$.ajax({
 		type: "POST",
 		//url: "http://localhost:8080/BBDPPatient/ClinicHoursServlet",

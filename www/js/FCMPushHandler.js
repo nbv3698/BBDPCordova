@@ -41,8 +41,8 @@ $(document).on("deviceready", function() {
 	});
 	FCMPlugin.getToken(function(token) {
 		//alert("getToken: " + token);
-	});*/
-	//FCMPlugin.subscribeToTopic('patient' + localStorage.getItem('login'));
+	});
+	FCMPlugin.subscribeToTopic('patient' + localStorage.getItem('login'));*/
 	FCMPlugin.onNotification(
 		function(data) {
 			/*if(data.wasTapped) {
