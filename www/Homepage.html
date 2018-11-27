@@ -15,6 +15,7 @@
 		<script>
 			//一進來就先判斷是否已經登入，沒有的話自動跳轉至登入頁面
 			document.addEventListener("backbutton", onBackKeyDown, false); 	//偵測事件  
+
 			function onBackKeyDown() {  		//返回按鈕    
 				navigator.notification.confirm('確定關閉BBDP', showConfirm, '離開', '確定,取消');
 			}
@@ -31,6 +32,7 @@
 		    	uuid = device.uuid;
 		    	console.log("uuid : " + uuid);
 		        judgeLogin();
+				getLatestRevisitTime();		//取得最近回診時間
 		    }
 
 		    function judgeLogin(){
@@ -171,9 +173,7 @@
 			</div>
 		</div>
 		</center>		
-		<script>
-			getLatestRevisitTime();		//取得最近回診時間
-		</script>
+
 	</body>
 </html>
 

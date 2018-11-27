@@ -11,6 +11,7 @@ var departmentIndex = -1;
 
 //取得最新的回診時間(Homepage.html)
 function getLatestRevisitTime() {
+	var url = "http://140.121.197.130:8004/BBDPPatient/RevisitTimeServlet"
 	$.ajax({
 		type: "POST",
 		url: url,
